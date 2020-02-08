@@ -12,7 +12,7 @@
 
 <body>
 
-	<header class="header">
+	<header class="header" id="header">
     <div class="header__container">
       <nav class="header__nav">
         <a class="logo" href="index.html">
@@ -52,7 +52,15 @@
     <h1 class="visually-hidden">My Portfolio</h1>
 
     <section class="gallery">
-      <div class="gallery__container">
+      <div class="gallery__button-container">
+        <div class="gallery__up-button-place">
+          <a class="gallery__up-button gallery__up-button--left" href="#header">
+            <div class="gallery__up-button-box gallery__up-button-box--left"></div>
+            <span class="visually-hidden">go up</span>
+          </a>
+        </div>
+      </div>
+      <div class="gallery__main-container">
         <h2 class="gallery__title"><strong>Gallery</strong></h2>
         <ul class="gallery__photos">
           <li class="photo__rectangle-vertical" style="position: absolute; left: 0px; top: 0px;">
@@ -401,6 +409,14 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="gallery__button-container">
+        <div class="gallery__up-button-place">
+          <a class="gallery__up-button" href="#header">
+            <div class="gallery__up-button-box gallery__up-button-box--right"></div>
+            <span class="visually-hidden">go up</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -1074,6 +1090,7 @@
   </div>
   
   <script src="js/photo-popup.js"></script>
+  <script src="js/anchors.js"></script>
 	
 </body>
 
