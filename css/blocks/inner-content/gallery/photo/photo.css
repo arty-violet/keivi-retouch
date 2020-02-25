@@ -1,0 +1,59 @@
+
+.photo__img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.photo__link {
+	cursor: url(../../../../../img/cursor-default.png), auto;
+}
+
+.photo__link:hover::after {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(248,248,255, 0.2);
+}
+
+.photo__rectangle-vertical {
+	width: 200px;
+	height: 400px;
+	overflow: hidden;
+
+	transition: transform 300ms linear 0s, opacity 300ms linear 0s;
+	outline: 1px solid white;
+}
+
+.photo__rectangle-horizontal {
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	
+	transition: transform 300ms linear 0s, opacity 300ms linear 0s;
+	outline: 1px solid white;
+}
+
+.photo__square-big {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	
+	transition: transform 300ms linear 0s, opacity 300ms linear 0s;
+	outline: 1px solid white;
+}
+
+.photo__square-small {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	
+	transition: transform 300ms linear 0s, opacity 300ms linear 0s;
+	outline: 1px solid white;
+}

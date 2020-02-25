@@ -1,0 +1,19 @@
+
+@import url(footer-social/footer-social.css);
+@import url(footer-copyright/footer-copyright.css);
+
+
+.footer {
+	min-height: 6vh;
+	padding-bottom: 10px;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
