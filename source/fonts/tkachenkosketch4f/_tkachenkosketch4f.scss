@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Tkachenko Sketch 4F';
+	src:
+		local('Tkachenko Sketch 4F'),
+		local('TkachenkoSketch4F'),
+		url('../fonts/tkachenkosketch4f/Tkachenkosketch4f.woff2') format('woff2'),
+		url('../fonts/tkachenkosketch4f/Tkachenkosketch4f.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tkachenko Sketch 4F';
+	src:
+		local('Tkachenko Sketch 4F Bold'),
+		local('TkachenkoSketch4F-Bold'),
+		url('../fonts/tkachenkosketch4f/Tkachenkosketch4fbold.woff2') format('woff2'),
+		url('../fonts/tkachenkosketch4f/Tkachenkosketch4fbold.woff') format('woff');
+	font-weight: 700;
+	font-style: bold;
+}

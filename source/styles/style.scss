@@ -1,0 +1,49 @@
+//***********************FONTS***********************//
+@import "../fonts/tkachenkosketch4f/tkachenkosketch4f";
+@import "../fonts/zhizn/zhizn";
+
+//*****************VARIABLES & MIXINS*****************//
+
+@import "../lib/variables/scss-variables";
+@import "../lib/mixins/sсss-mixins";
+
+//***********************BASES***********************//
+
+@import "../lib/bases/simplify";
+@import "../lib/bases/base-styles";
+@import "../lib/bases/body-grid";
+
+//***********************BLOCKS***********************//
+//-----------------------COMMON-----------------------//
+@import "../lib/blocks/_common/visually-hidden";
+@import "../lib/blocks/_common/container";
+@import "../lib/blocks/_common/title";
+@import "../lib/blocks/_common/button";
+
+//-----------------------HEADER-----------------------//
+@import "../lib/blocks/b_header/header";
+@import "../lib/blocks/b_header/nav-menu/nav-menu";
+
+//------------------------MAIN------------------------//
+@import "../lib/blocks/c_main/main-intro/main-intro";
+@import "../lib/blocks/c_main/main-about/main-about";
+
+//------------------------INNER-----------------------//
+@import "../lib/blocks/d_inner/gallery/gallery";
+@import "../lib/blocks/d_inner/gallery/photo/photo";
+@import "../lib/blocks/d_inner/gallery/up-button/up-button";
+
+@import "../lib/blocks/d_inner/about-me/about-me";
+@import "../lib/blocks/d_inner/about-me/photo-block/photo-block";
+
+@import "../lib/blocks/d_inner/contacts/contacts";
+@import "../lib/blocks/d_inner/contacts/contact-info/contact-info";
+@import "../lib/blocks/d_inner/contacts/letter/letter";
+
+//-----------------------FOOTER-----------------------//
+@import "../lib/blocks/f_footer/footer";
+@import "../lib/blocks/f_footer/social/social";
+@import "../lib/blocks/f_footer/copyright/copyright";
+
+//-----------------------MODALS-----------------------//
+@import "../lib/blocks/g_modals/modal/modal";

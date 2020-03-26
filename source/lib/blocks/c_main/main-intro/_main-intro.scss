@@ -1,0 +1,15 @@
+
+// .main-intro {}
+
+.main-intro__title {
+	@include pad_v(50px);
+
+	strong {
+	display: inline-block;
+	}
+	
+	//---------------------------------------
+	@media (max-width: 768px) {
+		padding-bottom: 30px;
+	}
+}

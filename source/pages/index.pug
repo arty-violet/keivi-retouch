@@ -1,0 +1,16 @@
+extends _template.pug
+
+append variables
+	//- head vars
+	- pageTitle = "KEI VI ART";
+	- description = "Description";
+	//- header vars
+	- indexLogo = "header__logo--main";
+	- indexLink = "#";
+
+block main
+	main
+		div.container
+			h1.visually-hidden Ksenya Violet homepage
+			include ../lib/blocks/c_main/main-intro/_main-intro
+			include ../lib/blocks/c_main/main-about/_main-about

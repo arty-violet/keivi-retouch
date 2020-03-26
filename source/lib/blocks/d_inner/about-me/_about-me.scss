@@ -1,0 +1,72 @@
+// .about-me {}
+
+// .about-me__section {}
+
+.about-me__title {
+	@include pad_v(50px, 25px);
+	@include pad_h(25%);
+
+	//---------------------------------------
+	@media (max-width: 768px) {
+		padding-top: 25px;
+	}
+}
+
+.about-me__block {
+	display: flex;
+
+	//---------------------------------------
+	@media (max-width: 1220px) {
+		flex-wrap: wrap;
+	}
+}
+
+.about-me__info {
+	max-width: 900px;
+	min-width: 400px;
+	margin: 0;
+	@include pad_v(25px, 50px);
+	@include pad_h(25px);
+
+	font-family: 'Zhizn';
+	font-size: 16px;
+
+	& p {
+		margin-bottom: 16px;
+	}
+
+	//---------------------------------------
+	@media (max-width: 1220px) {
+		font-size: 15px;
+
+		& p {
+			margin-bottom: 13px;
+		}
+	}
+
+	//---------------------------------------
+	@media (max-width: 768px) {
+		@include pad_v(25px, null);
+
+		font-size: 14px;
+
+		& p {
+			margin-bottom: 10px;
+		}
+	}
+
+	//---------------------------------------
+	@media (max-width: 580px) {
+		min-width: 89.86%;
+		@include pad_h(5.07%);
+	}
+}
+
+.about-me__author {
+	display: block;
+	padding: 10px 0;
+	padding-right: 15%;
+
+	text-align: right;
+	font-style: italic;
+}
