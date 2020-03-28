@@ -82,7 +82,7 @@ gulp.task("webp", function () {
 		.pipe(webp({
 			quality: 90
 		}))
-		.pipe(gulp.dest('./build/img/'))
+		.pipe(gulp.dest('./build/img/webp/'))
 });
 
 // generate svg sprite
@@ -160,6 +160,14 @@ gulp.task('build',
 gulp.task('default',
 	gulp.series(
 		gulp.parallel('pug', 'scss', 'js'),
+		gulp.parallel('server', 'watch'),
+	)
+);
+
+// default task
+gulp.task('pug+',
+	gulp.series(
+		gulp.parallel('pug'),
 		gulp.parallel('server', 'watch'),
 	)
 );

@@ -49,7 +49,12 @@
         </div>
         <section class="main-about">
           <h2 class="main-about__title title"><strong>About Me</strong></h2>
-          <div class="main-about__block"><img class="main-about__photo" src="img/about-me/keivi-photo-1.jpg" width="296" height="456" alt="My personal photo">
+          <div class="main-about__block">
+            <picture class="main-about__picture">
+              <source type="image/webp" media="(max-width: 580px)" srcset="img/webp/about-me/keivi-photo-1-mob@1x.webp 1x, img/webp/about-me/keivi-photo-1-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/about-me/keivi-photo-1-dsk@1x.webp 1x, img/webp/about-me/keivi-photo-1-dsk@2x.webp 2x">
+              <source media="(max-width: 580px)" srcset="img/about-me/keivi-photo-1-mob@1x.jpg 1x, img/about-me/keivi-photo-1-mob@2x.jpg 2x"><img class="main-about__photo" src="img/about-me/keivi-photo-1-dsk@1x.jpg" srcset="img/about-me/keivi-photo-1-dsk@2x.jpg 2x" alt="My personal photo">
+            </picture>
             <blockquote class="main-about__info">
               <p>Salut! My name is Ksenya and I’m a High End, Beauty, Fashion, Editorial and Commercial <strong>Retoucher</strong>
                 <based>in Moscow, working&nbsp;worldwide.</based>

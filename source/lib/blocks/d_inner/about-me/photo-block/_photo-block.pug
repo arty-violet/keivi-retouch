@@ -1,6 +1,50 @@
 .photo-block
 	.photo-block__major-block
-		img.photo-block__photo-big(src='img/about-me/keivi-photo-2.jpg', width='296', height='456', alt='My personal photo')
+		picture.photo-block__picture
+			source(
+				type="image/webp"
+				media="(max-width: 580px)"
+				srcset="img/webp/about-me/keivi-photo-2-mob@1x.webp 1x, img/webp/about-me/keivi-photo-2-mob@2x.webp 2x")
+			source(
+				type="image/webp"
+				srcset="img/webp/about-me/keivi-photo-2-dsk@1x.webp 1x, img/webp/about-me/keivi-photo-2-dsk@2x.webp 2x")
+			source(
+				media="(max-width: 580px)"
+				srcset="img/about-me/keivi-photo-2-mob@1x.jpg 1x, img/about-me/keivi-photo-2-mob@2x.jpg 2x")
+			img.photo-block__photo-big(
+				src="img/about-me/keivi-photo-2-dsk@1x.jpg"
+				srcset="img/about-me/keivi-photo-2-dsk@2x.jpg 2x"
+				alt="My personal photo")
+
 	.photo-block__minor-block
-		img.photo-block__photo-small(src='img/about-me/keivi-photo-3.jpg', width='146', height='196', alt='My personal photo')
-		img.photo-block__photo-small(src='img/about-me/keivi-photo-4.jpg', width='146', height='196', alt='My personal photo')
+		picture.photo-block__picture
+			source(
+				type="image/webp"
+				media="(max-width: 580px)"
+				srcset="img/webp/about-me/keivi-photo-3-mob@1x.webp 1x, img/webp/about-me/keivi-photo-3-mob@2x.webp 2x")
+			source(
+				type="image/webp"
+				srcset="img/webp/about-me/keivi-photo-3-dsk@1x.webp 1x, img/webp/about-me/keivi-photo-3-dsk@2x.webp 2x")
+			source(
+				media="(max-width: 580px)"
+				srcset="img/about-me/keivi-photo-3-mob@1x.jpg 1x, img/about-me/keivi-photo-3-mob@2x.jpg 2x")
+			img.photo-block__photo-small(
+				src="img/about-me/keivi-photo-3-dsk@1x.jpg"
+				srcset="img/about-me/keivi-photo-3-dsk@2x.jpg 2x"
+				alt="My personal photo")
+				
+		picture.photo-block__picture
+			source(
+				type="image/webp"
+				media="(max-width: 580px)"
+				srcset="img/webp/about-me/keivi-photo-4-mob@1x.webp 1x, img/webp/about-me/keivi-photo-4-mob@2x.webp 2x")
+			source(
+				type="image/webp"
+				srcset="img/webp/about-me/keivi-photo-4-dsk@1x.webp 1x, img/webp/about-me/keivi-photo-4-dsk@2x.webp 2x")
+			source(
+				media="(max-width: 580px)"
+				srcset="img/about-me/keivi-photo-4-mob@1x.jpg 1x, img/about-me/keivi-photo-4-mob@2x.jpg 2x")
+			img.photo-block__photo-small(
+				src="img/about-me/keivi-photo-4-dsk@1x.jpg"
+				srcset="img/about-me/keivi-photo-4-dsk@2x.jpg 2x"
+				alt="My personal photo")
