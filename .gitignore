@@ -1,2 +1,8 @@
-node_modules
 files
+node_modules
+source
+.editorconfig
+.gitignore
+gulpfile.js
+package-lock.json
+package.json
