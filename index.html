@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +19,7 @@
       <div class="header__container container">
         <nav class="header__nav">
           <div class="header__logo-wrapper"><a class="header__logo header__logo--main" href="#">Ksenya Violet <br>
-              <div class="header__logo-art"><span><i class="icon icon-flower-dsk"></i><i class="icon icon-flower-mob"></i></span><span>Art </span><span><i class="icon icon-flower-mob"></i></span></div></a></div>
+              <div class="header__logo-art"><span><i class="icon icon-quill"></i><i class="icon icon-coffee"></i></span><span>Art </span><span><i class="icon icon-pencil"></i></span></div></a></div>
           <input class="nav-menu__checkbox" id="nav-menu__toggle" type="checkbox">
           <label class="nav-menu__toggle" for="nav-menu__toggle"><i class="icon icon-menu"></i><i class="icon icon-cross"></i><span class="hidden">Menu toggle</span></label>
           <ul class="nav-menu nav-menu__list">
@@ -45,15 +44,15 @@
       <div class="container">
         <h1 class="hidden">Ksenya Violet homepage</h1>
         <div class="main-intro">
-          <h2 class="main-intro__title title"><strong>Photo Retoucher</strong><strong>and&nbsp;adventure&nbsp;seeker</strong><br><strong>with a passion for art</strong></h2>
+          <h2 class="main-intro__title title"><strong>Photo Retoucher</strong><strong>and&nbsp;adventure&nbsp;seeker</strong><strong>with a passion for art</strong></h2>
         </div>
         <section class="main-about">
           <h2 class="main-about__title title"><strong>About Me</strong></h2>
           <div class="main-about__block">
             <picture class="main-about__picture">
-              <source media="(min-width: 600px)" srcset="img/webp/content/main-about/main-about__img-dsk.webp 1x,img/webp/content/main-about/main-about__img-dsk@2x.webp 2x" type="image/webp">
-              <source srcset="img/webp/content/main-about/main-about__img-mob.webp 1x,img/webp/content/main-about/main-about__img-mob@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 600px)" srcset="img/content/main-about/main-about__img-dsk.jpg 1x,img/content/main-about/main-about__img-dsk@2x.jpg 2x"><img class="main-about__img" src="img/content/main-about/main-about__img-mob.jpg" srcset="img/content/main-about/main-about__img-mob@2x.jpg 2x" alt="My personal photo">
+              <source media="(min-width: 600px)" srcset="img/webp/content/main-about/main-about__img-dsk.webp 1x,img/webp/content/main-about/main-about__img-dsk@2x.webp 2x" type="image/webp"/>
+              <source srcset="img/webp/content/main-about/main-about__img-mob.webp 1x,img/webp/content/main-about/main-about__img-mob@2x.webp 2x" type="image/webp"/>
+              <source media="(min-width: 600px)" srcset="img/content/main-about/main-about__img-dsk.jpg 1x,img/content/main-about/main-about__img-dsk@2x.jpg 2x"/><img class="main-about__img" src="img/content/main-about/main-about__img-mob.jpg" srcset="img/content/main-about/main-about__img-mob@2x.jpg 2x" alt="My personal photo"/>
             </picture>
             <blockquote class="main-about__info">
               <p>
@@ -65,8 +64,7 @@
               <p>It’s all about inspiration, self-creation and <strong>magic</strong> inside.</p>
               <p>If you’re interested in my services, please <strong>feel&nbsp;free</strong> to&nbsp;contact&nbsp;me.</p>
               <cite class="main-about__author"><b>
-                   ~ Ksenya Violet</b></cite><a class="main-about__link button" href="about.html"><strong class="black">
-                   Read more</strong></a>
+                   ~ Ksenya Violet</b></cite><a class="main-about__link button" href="about.html"><span>Read more</span></a>
             </blockquote>
           </div>
         </section>
@@ -76,11 +74,26 @@
     <footer class="footer">
       <div class="footer__container container">
         <ul class="social">
-          <li class="social__item"><a class="social__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i><span class="hidden">Instagram</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://www.facebook.com/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://vk.com/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-vk"></i><span class="hidden">Vkontakte</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://www.behance.net/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-behance"></i><span class="hidden">Behance</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://500px.com/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-500px"></i><span class="hidden">500 px</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener">
+              <svg class="icon-instagram">
+                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+              </svg><span class="hidden">Instagram</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.facebook.com/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-facebook">
+                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+              </svg><span class="hidden">Facebook</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://vk.com/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-vk">
+                <use xlink:href="img/sprite/sprite.svg#vk"></use>
+              </svg><span class="hidden">Vkontakte</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.behance.net/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-behance">
+                <use xlink:href="img/sprite/sprite.svg#behance"></use>
+              </svg><span class="hidden">Behance</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://500px.com/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-500px">
+                <use xlink:href="img/sprite/sprite.svg#500px"></use>
+              </svg><span class="hidden">500 px</span></a></li>
         </ul>
         <div class="copyright"><b>Designed with</b><span class="copyright__heart-place"></span>
           <div class="copyright__heart"><i class="icon icon-heart"></i><span class="hidden">love</span></div><b>by:</b><a class="copyright__developer" href="https://github.com/artysoule" target="_blank" rel="noopener"><strong>Arty Soule</strong></a>

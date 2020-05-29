@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +19,7 @@
       <div class="header__container container">
         <nav class="header__nav">
           <div class="header__logo-wrapper"><a class="header__logo" href="index.html">Ksenya Violet <br>
-              <div class="header__logo-art"><span><i class="icon icon-flower-dsk"></i><i class="icon icon-flower-mob"></i></span><span>Art </span><span><i class="icon icon-flower-mob"></i></span></div></a></div>
+              <div class="header__logo-art"><span><i class="icon icon-quill"></i><i class="icon icon-coffee"></i></span><span>Art </span><span><i class="icon icon-pencil"></i></span></div></a></div>
           <input class="nav-menu__checkbox" id="nav-menu__toggle" type="checkbox">
           <label class="nav-menu__toggle" for="nav-menu__toggle"><i class="icon icon-menu"></i><i class="icon icon-cross"></i><span class="hidden">Menu toggle</span></label>
           <ul class="nav-menu nav-menu__list">
@@ -50,27 +49,51 @@
               <h2 class="contact-info__title title"><strong>Contacts</strong></h2>
               <ul class="contact-info__list">
                 <li class="contact-info__item">
-                  <div class="contact-info__icon"><i class="fa fa-envelope-o"></i></div><a class="contact-info__link" href="mailto:ksenyaviolet@yahoo.com" target="_blank" rel="noopener"><span>ksenyaviolet@yahoo.com</span></a>
+                  <div class="contact-info__icon">
+                    <svg class="icon-email">
+                      <use xlink:href="img/sprite/sprite.svg#email"></use>
+                    </svg>
+                  </div><a class="contact-info__link" href="mailto:ksenyaviolet@yahoo.com" target="_blank" rel="noopener"><span>ksenyaviolet@yahoo.com</span></a>
                 </li>
                 <li class="contact-info__item">
-                  <div class="contact-info__icon"><i class="fa fa-instagram"></i></div><a class="contact-info__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener"><span>@keivi.retoucher</span></a>
+                  <div class="contact-info__icon">
+                    <svg class="icon-instagram">
+                      <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                    </svg>
+                  </div><a class="contact-info__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener"><span>@keivi.retoucher</span></a>
                 </li>
                 <li class="contact-info__item">
-                  <div class="contact-info__icon"><i class="fa fa-facebook-square"></i></div><a class="contact-info__link" href="https://www.facebook.com/ksenyaviolet" target="_blank" rel="noopener"><span>/ksenyaviolet</span></a>
+                  <div class="contact-info__icon">
+                    <svg class="icon-facebook">
+                      <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+                    </svg>
+                  </div><a class="contact-info__link" href="https://www.facebook.com/ksenyaviolet" target="_blank" rel="noopener"><span>/ksenyaviolet</span></a>
                 </li>
                 <li class="contact-info__item">
-                  <div class="contact-info__icon"><i class="fa fa-vk"></i></div><a class="contact-info__link" href="https://vk.com/ksenyaviolet" target="_blank" rel="noopener"><span>/ksenyaviolet</span></a>
+                  <div class="contact-info__icon">
+                    <svg class="icon-vk">
+                      <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                    </svg>
+                  </div><a class="contact-info__link" href="https://vk.com/ksenyaviolet" target="_blank" rel="noopener"><span>/ksenyaviolet</span></a>
                 </li>
                 <li class="contact-info__item">
-                  <div class="contact-info__icon"><i class="fa fa-behance"></i></div><a class="contact-info__link" href="https://www.behance.net/ksenyaviolet" target="_blank" rel="noopener"><span>/ksenyaviolet</span></a>
+                  <div class="contact-info__icon">
+                    <svg class="icon-behance">
+                      <use xlink:href="img/sprite/sprite.svg#behance"></use>
+                    </svg>
+                  </div><a class="contact-info__link" href="https://www.behance.net/ksenyaviolet" target="_blank" rel="noopener"><span>/ksenyaviolet</span></a>
                 </li>
                 <li class="contact-info__item">
-                  <div class="contact-info__icon"><i class="fa fa-phone"></i></div><a class="contact-info__link"><span>8-910-302-0089</span></a>
+                  <div class="contact-info__icon">
+                    <svg class="icon-phone">
+                      <use xlink:href="img/sprite/sprite.svg#phone"></use>
+                    </svg>
+                  </div><a class="contact-info__link"><span>8-910-302-0089</span></a>
                 </li>
               </ul>
             </section>
             <section class="letter">
-              <h2 class="hidden">Letter form</h2><small class="letter__tip">Enter message (optional) and click button &quot;Send&quot;</small>
+              <h2 class="hidden">Letter form</h2><small class="letter__tip">Enter message and click button &quot;Send&quot;</small>
               <div class="letter__container">
                 <form class="letter__form" action="https://formspree.io/ksenyaviolet@yahoo.com" method="post">
                   <div class="letter__side">
@@ -104,11 +127,26 @@
     <footer class="footer">
       <div class="footer__container container">
         <ul class="social">
-          <li class="social__item"><a class="social__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i><span class="hidden">Instagram</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://www.facebook.com/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://vk.com/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-vk"></i><span class="hidden">Vkontakte</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://www.behance.net/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-behance"></i><span class="hidden">Behance</span></a></li>
-          <li class="social__item"><a class="social__link" href="https://500px.com/ksenyaviolet" target="_blank" rel="noopener"><i class="fa fa-500px"></i><span class="hidden">500 px</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener">
+              <svg class="icon-instagram">
+                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+              </svg><span class="hidden">Instagram</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.facebook.com/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-facebook">
+                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+              </svg><span class="hidden">Facebook</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://vk.com/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-vk">
+                <use xlink:href="img/sprite/sprite.svg#vk"></use>
+              </svg><span class="hidden">Vkontakte</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.behance.net/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-behance">
+                <use xlink:href="img/sprite/sprite.svg#behance"></use>
+              </svg><span class="hidden">Behance</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://500px.com/ksenyaviolet" target="_blank" rel="noopener">
+              <svg class="icon-500px">
+                <use xlink:href="img/sprite/sprite.svg#500px"></use>
+              </svg><span class="hidden">500 px</span></a></li>
         </ul>
         <div class="copyright"><b>Designed with</b><span class="copyright__heart-place"></span>
           <div class="copyright__heart"><i class="icon icon-heart"></i><span class="hidden">love</span></div><b>by:</b><a class="copyright__developer" href="https://github.com/artysoule" target="_blank" rel="noopener"><strong>Arty Soule</strong></a>
