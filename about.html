@@ -10,9 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="https://unpkg.com/wired-elements@2.0.5/lib/wired-elements-bundled.js"></script>
+    <link rel="preload" href="css/libs.css?200601" as="style">
+    <link rel="preload" href="css/style.css?200601" as="style">
+    <link rel="preload" href="img/sprite/sprite.png" as="image">
+    <link rel="preload" href="img/sprite/sprite.svg" as="image">
+    <link rel="preload" href="img/decor/chalkboard-background.jpg" as="image" media="(max-resolution: 143dpi), (max-resolution: 1.49dppx)">
+    <link rel="preload" href="img/decor/chalkboard-background@2x.jpg" as="image" media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)">
+    <link rel="stylesheet" href="css/libs.css?200601">
+    <link rel="stylesheet" href="css/style.css?200601">
   </head>
   <body class="body-grid">
     <header class="header">
@@ -83,7 +88,7 @@
     
     <footer class="footer">
       <div class="footer__container container">
-        <ul class="social">
+        <ul class="social social--about">
           <li class="social__item"><a class="social__link" href="https://www.instagram.com/keivi.retoucher/" target="_blank" rel="noopener">
               <svg class="icon-instagram">
                 <use xlink:href="img/sprite/sprite.svg#instagram"></use>
@@ -105,7 +110,7 @@
                 <use xlink:href="img/sprite/sprite.svg#500px"></use>
               </svg><span class="hidden">500 px</span></a></li>
         </ul>
-        <div class="copyright"><b>Designed with</b><span class="copyright__heart-place"></span>
+        <div class="copyright copyright--about"><b>Designed with</b><span class="copyright__heart-place"></span>
           <div class="copyright__heart"><i class="icon icon-heart"></i><span class="hidden">love</span></div><b>by:</b><a class="copyright__developer" href="https://github.com/artysoule" target="_blank" rel="noopener"><strong>Arty Soule</strong></a>
         </div>
       </div>
