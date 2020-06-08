@@ -1933,7 +1933,7 @@ path {
       #card {
         display: block;
         position: absolute;
-        background: var(--wired-combo-popup-bg, white);
+        background: var(--wired-combo-popup-bg, transparent);
         z-index: 1;
         box-shadow: 1px 5px 15px -6px rgba(0, 0, 0, 0.8);
         padding: 8px;
@@ -1952,7 +1952,7 @@ path {
       </div>
       <div id="dropPanel" class="inline"></div>
       <div class="overlay">
-        <svg></svg>
+				<svg></svg>
       </div>
     </div>
     <wired-card id="card" tabindex="-1" role="listbox" @mousedown="${this.onItemClick}" @touchstart="${this.onItemClick}" style="display: none;">
@@ -2635,7 +2635,7 @@ path {
         text-align: left;
       }
       button {
-        cursor: pointer;
+        cursor: url(../img/decor/cursors/cursor-button.png), pointer;
         outline: none;
         overflow: hidden;
         color: inherit;
@@ -2656,7 +2656,8 @@ path {
         white-space: nowrap;
       }
       button.selected {
-        color: var(--wired-item-selected-color, #fff);
+				color: var(--wired-item-selected-color, black);
+				text-shadow: 0 0 1px black;
       }
       button::before {
         content: '';
@@ -2683,7 +2684,7 @@ path {
         display: block;
       }
       svg path {
-        stroke: var(--wired-item-selected-bg, #000);
+        stroke: var(--wired-item-selected-bg, white);
         stroke-width: 2.75;
         fill: transparent;
         transition: transform 0.05s ease;
@@ -2697,7 +2698,7 @@ path {
 		}
 		render() {
 			return P `
-    <button class="${this.selected?"selected":""}">
+    <button class = "${this.selected?"selected":""}" href="ru/index.html';">
       <div id="overlay"><svg></svg></div>
       <span><slot></slot></span>
     </button>`
