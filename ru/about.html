@@ -9,15 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="preload" href="../css/libs.css?200608" as="style">
-    <link rel="preload" href="../css/style.css?200608" as="style">
+    <link rel="preload" href="../fonts/tkachenkosketch4f/Tkachenkosketch4f.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/tkachenkosketch4f/Tkachenkosketch4f.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../fonts/tkachenkosketch4f/Tkachenkosketch4fbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/tkachenkosketch4f/Tkachenkosketch4fbold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../fonts/zhizn/zhizn.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/zhizn/zhizn.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../css/libs.css?200609" as="style">
+    <link rel="preload" href="../css/style.css?200609" as="style">
     <link rel="preload" href="../img/sprite/sprite.png" as="image">
-    <link rel="preload" href="../img/sprite/sprite.svg" as="image">
-    <link rel="preload" href="../img/decor/chalkboard-background.jpg" as="image" media="(max-resolution: 143dpi), (max-resolution: 1.49dppx)">
-    <link rel="preload" href="../img/decor/chalkboard-background@2x.jpg" as="image" media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)">
-    <link rel="stylesheet" href="../css/libs.css?200608">
-    <link rel="stylesheet" href="../css/style.css?200608">
+    <link rel="preload" href="../img/decor/cursors/cursor-default.png" as="image">
+    <link rel="preload" href="../img/decor/cursors/cursor-button.png" as="image">
+    <link rel="preload" href="../img/decor/cursors/cursor-pointer.png" as="image">
+    <link rel="preload" href="../img/decor/cursors/cursor-text.png" as="image">
+    <link rel="preload" href="../img/decor/body-bg-mob.jpg" as="image" media="(max-width: 599px)">
+    <link rel="preload" href="../img/decor/body-bg-tab.jpg" as="image" media="(min-width: 600px) and (max-width: 1023px)">
+    <link rel="preload" href="../img/decor/body-bg-dsk.jpg" as="image" media="(min-width: 1024px)">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
   </head>
   <body class="body-grid">
     <header class="header">
@@ -110,23 +120,17 @@
               <div class="photo-block">
                 <div class="photo-block__major-block">
                   <picture class="photo-block__picture-big">
-                    <source media="(min-width: 460px)" srcset="../img/webp/content/about-me/about-me__img-dsk-1.webp 1x,../img/webp/content/about-me/about-me__img-dsk-1@2x.webp 2x" type="image/webp"/>
-                    <source srcset="../img/webp/content/about-me/about-me__img-mob-1.webp 1x,../img/webp/content/about-me/about-me__img-mob-1@2x.webp 2x" type="image/webp"/>
-                    <source media="(min-width: 460px)" srcset="../img/content/about-me/about-me__img-dsk-1.jpg 1x,../img/content/about-me/about-me__img-dsk-1@2x.jpg 2x"/><img src="../img/content/about-me/about-me__img-mob-1.jpg" srcset="../img/content/about-me/about-me__img-mob-1@2x.jpg 2x" alt="My personal photo"/>
+                    <source srcset="../img/webp/content/about-me/about-me__img-1.webp 1x,../img/webp/content/about-me/about-me__img-1@2x.webp 2x" type="image/webp"/><img src="../img/content/about-me/about-me__img-1.jpg" srcset="../img/content/about-me/about-me__img-1@2x.jpg 2x" alt="Фото Ксении Виолет"/>
                   </picture>
                   <wired-image class="photo-block__wire-big" elevation="3"></wired-image>
                 </div>
                 <div class="photo-block__minor-block">
                   <picture class="photo-block__picture-small">
-                    <source media="(min-width: 460px)" srcset="../img/webp/content/about-me/about-me__img-dsk-2.webp 1x,../img/webp/content/about-me/about-me__img-dsk-2@2x.webp 2x" type="image/webp"/>
-                    <source srcset="../img/webp/content/about-me/about-me__img-mob-2.webp 1x,../img/webp/content/about-me/about-me__img-mob-2@2x.webp 2x" type="image/webp"/>
-                    <source media="(min-width: 460px)" srcset="../img/content/about-me/about-me__img-dsk-2.jpg 1x,../img/content/about-me/about-me__img-dsk-2@2x.jpg 2x"/><img src="../img/content/about-me/about-me__img-mob-2.jpg" srcset="../img/content/about-me/about-me__img-mob-2@2x.jpg 2x" alt="My personal photo"/>
+                    <source srcset="../img/webp/content/about-me/about-me__img-2.webp 1x,../img/webp/content/about-me/about-me__img-2@2x.webp 2x" type="image/webp"/><img src="../img/content/about-me/about-me__img-2.jpg" srcset="../img/content/about-me/about-me__img-2@2x.jpg 2x" alt="Фото Ксении Виолет"/>
                   </picture>
                   <wired-image class="photo-block__wire-small" elevation="2"></wired-image>
                   <picture class="photo-block__picture-small">
-                    <source media="(min-width: 460px)" srcset="../img/webp/content/about-me/about-me__img-dsk-3.webp 1x,../img/webp/content/about-me/about-me__img-dsk-3@2x.webp 2x" type="image/webp"/>
-                    <source srcset="../img/webp/content/about-me/about-me__img-mob-3.webp 1x,../img/webp/content/about-me/about-me__img-mob-3@2x.webp 2x" type="image/webp"/>
-                    <source media="(min-width: 460px)" srcset="../img/content/about-me/about-me__img-dsk-3.jpg 1x,../img/content/about-me/about-me__img-dsk-3@2x.jpg 2x"/><img src="../img/content/about-me/about-me__img-mob-3.jpg" srcset="../img/content/about-me/about-me__img-mob-3@2x.jpg 2x" alt="My personal photo"/>
+                    <source srcset="../img/webp/content/about-me/about-me__img-3.webp 1x,../img/webp/content/about-me/about-me__img-3@2x.webp 2x" type="image/webp"/><img src="../img/content/about-me/about-me__img-3.jpg" srcset="../img/content/about-me/about-me__img-3@2x.jpg 2x" alt="Фото Ксении Виолет"/>
                   </picture>
                   <wired-image class="photo-block__wire-small" elevation="2"></wired-image>
                 </div>
@@ -134,13 +138,13 @@
               <blockquote class="about-me__info">
                 <p>
                   Я живу в Москве и принимаю заказы cо всего мира.
-                  Мне нравится работать в <strong>жанрах:</strong> High End, Beauty, Fashion, Editorial and Commercial Photography.
+                  Мне&nbsp;нравится работать в <strong>жанрах:</strong> High End, Beauty, Fashion, Editorial and Commercial Photography.
                 </p>
                 <p>Мир фотографии, <strong>ретуши</strong> и фильммейкинга открылся мне ещё в&nbsp;детстве. Мне всегда нравится создавать что-то новое, красивое и уникальное.</p>
                 <p>
                    Также я без ума от поэзии, театра, путешествий и <strong>кофе.</strong> Я&nbsp;всегда стараюсь вкладывать все свои чувства <strong>в&nbsp;искусство.</strong></p>
                 <p>
-                   Со всеми своими клиентами я работаю очень близко. Я&nbsp;обладаю чудесным умением находить нечто особенное в каждой сияющей душе.</p>
+                   Со всеми своими клиентами я работаю очень близко. <br>Я&nbsp;обладаю чудесным умением находить нечто особенное в каждой сияющей душе.</p>
                 <p>
                    Я верю, что могу проживать каждый день своей жизни с радостью, развиваясь как <strong>художник</strong> и&nbsp;делая&nbsp;то, что мне <strong>нравится</strong>. Я&nbsp;всегда вкладываю <strong>своё&nbsp;сердце</strong> в&nbsp;это.</p>
                 <p>
@@ -185,7 +189,7 @@
     </footer>
     
     
-    <script src="../js/libs.js?200608"></script>
-    <script src="../js/script.js?200608"></script>
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
   </body>
 </html>
